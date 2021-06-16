@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="595.0" style="-fx-background-color: #DAA520;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="280.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="302.0" AnchorPane.topAnchor="11.0">
+         <image>
+            <Image url="@../../../../Downloads/1.png" />
+         </image>
+      </ImageView>
+      <CheckBox id="cb1" fx:id="cb1" layoutX="300.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleCB1" text="yes">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="cb2" fx:id="cb2" layoutX="300.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleCB2" text="yes">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="cb3" fx:id="cb3" layoutX="300.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleCB3" text="yes">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="cb5" fx:id="cb5" layoutX="300.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleCB5" text="yes">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="cb4" fx:id="cb4" layoutX="300.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleCB4" text="yes">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="297.0" layoutY="14.0" prefHeight="19.0" prefWidth="249.0" style="-fx-background-color: #F0FFF0;" text="  Select All Boxes that contains your birthday">
+         <font>
+            <Font name="Tools" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="309.0" text="Your Birthday is">
+         <font>
+            <Font name="curative" size="14.0" />
+         </font>
+      </Label>
+      <Label id="label" fx:id="label" layoutX="390.0" layoutY="332.0" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="Tools" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="390.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleGuess" prefHeight="25.0" prefWidth="97.0" text="Guess BirthDay" textOverrun="WORD_ELLIPSIS" />
+      <Button layoutX="527.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleReset" text="Reset" />
+   </children>
+</AnchorPane>
